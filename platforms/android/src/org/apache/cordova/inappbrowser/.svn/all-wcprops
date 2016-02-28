@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/trunk/Darimpo/src/org/apache/cordova/inappbrowser
+END
+InAppBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/4/trunk/Darimpo/src/org/apache/cordova/inappbrowser/InAppBrowser.java
+END
+InAppBrowserDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/4/trunk/Darimpo/src/org/apache/cordova/inappbrowser/InAppBrowserDialog.java
+END
+InAppChromeClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/4/trunk/Darimpo/src/org/apache/cordova/inappbrowser/InAppChromeClient.java
+END
