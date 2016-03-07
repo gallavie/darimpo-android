@@ -1,41 +1,81 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<meta name="serverVersion" content="3.5" />
+
+<meta name="googlePlayAppURL_RESIDENT"
+	content="https://play.google.com/store/apps/details?id=com.spm.resident" />
+<meta name="appstoreAppURL_RESIDENT"
+	content="https://itunes.apple.com/il/app/drympw-dyyr/id863924170?mt=8" />
+
+
+<!-- Consider inlining CSS to reduce the number of requested files 
+<!--                                                               -->
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+
+</head>
+
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body onload="onLoaded()">
+	<div id="dpiData" style="display: none;"></div>
+	<div id="ppiData" style="display: none;"></div>
+	<div id="xdpiData" style="display: none;"></div>
+
+	<div id="notificationData" style="display: none;"></div>
+	
+	<script type="text/javascript" src="cordova.js"></script>
+
+	<script type="text/javascript" language="javascript"
+		src="js/floor_report.nocache.js"></script>
+	<script type="text/javascript" language="javascript">
+		function onLoaded() {
+		    document.addEventListener("deviceready", onDeviceReady, false);		
+		}
+		function getPPI(){
+			 // create an empty element
+			 var div = document.createElement("div");
+			 // give it an absolute size of one inch
+			 div.style.width="1in";
+			 // append it to the body
+			 var body = document.getElementsByTagName("body")[0];
+			 body.appendChild(div);
+			 // read the computed width
+			 var ppi = document.defaultView.getComputedStyle(div, null).getPropertyValue('width');
+			 // remove it again
+			 body.removeChild(div);
+			 // and return the value
+			 return parseFloat(ppi);
+		}
+		
+		function onDeviceReady() {	
+			document.getElementById("ppiData").innerText = "" + getPPI();
+		    document.getElementById("dpiData").innerText = "" + window.devicePixelRatio;
+		    document.getElementById("xdpiData").innerText = "" + window.interface.getXdpi();
+		   
+		}
+		
+	</script>
+
+
+</body>
 </html>

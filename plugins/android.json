@@ -44,6 +44,12 @@
         },
         "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "com.spm.resident"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.spm.resident"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.spm.resident"
         }
     },
     "dependent_plugins": {}
