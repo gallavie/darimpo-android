@@ -1,115 +1,2231 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+/** start fonts */
+@font-face {
+	font-family: darimpoFont;
+	src: url('http://darimpo-test.appspot.com/fonts/AlefRegular.ttf');
+}
+/** end fonts */
+.body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background: #f1f0f5;
+	direction: rtl;
+	color: #00aeef;
+	width: 100%;
+	height: 100%;
+	font-family: darimpoFont !important;
+}
+/** start phoneMain */
+.phoneMain {
+	width: inherit;
+	height: inherit;
+	background: #eee;
+	background-color: #eee;
+	background-image: none;
 }
 
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+.phoneMainSideMenuButton {
+	margin-right: 2%;
+	float: right;
 }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+.phoneMainLogo {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+.phoneMainBackContent {
+	margin-left: 2%;
+	float: left;
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+.floatPhoneMainSideMenuButton {
+	margin-top: 3%;
+	margin-right: 2%;
+	float: right;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+.floatPhoneMainLogo {
+	margin-top: 3%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.floatPhoneMainBackContent {
+	margin-top: 3%;
+	margin-left: 2%;
+	float: left;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+.actionBar {
+	float: right;
+	padding: 1%;
+	width: 98%;
+	background: #f8f8f8;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+}
+/** end phoneMain*/
+/** start page*/
+.page {
+	width: 100%;
+	float: right;
+	background: -webkit-linear-gradient(#efeff3, #f0f0f4);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#efeff3, #f0f0f4);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#efeff3, #f0f0f4);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#efeff3, #f0f0f4);
+	/* Standard syntax (must be*/
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+.pageContent {
+	float: right;
+	width: 100%;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+/** end page*/
+/** start content*/
+.content {
+	float: right;
+	width: 100%;
+	position: relative;
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+/** end content*/
+/** start contentForm*/
+.contentUpdateDetailsInformationEnteredInvalid {
+	color: #ff0000;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	float: right;
+	margin-bottom: 2%;
+}
+
+.contentFormWidgetPlaceHolderTextInvalid ::-webkit-input-placeholder {
+	color: #ff0000 !important;
+}
+
+.contentFormWidgetTextInvalid {
+	color: #ff0000 !important;
+}
+/*.contentFormWidgetTextInvalid ::-moz-placeholder{
+	color: #ff0000 !important;
+}*/
+.contentFormWidgetBorderInvalid {
+	border-bottom: 1px solid #ff0000 !important;
+}
+/** end contentForm*/
+/** start contentLoginUser*/
+.contentLoginUser {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.pageLoginUserLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 30%;
+	max-width: 30%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.contentLoginUserEmailLogin {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	width: 96%;
+	border-top: 1px solid #2b93bf;
+	border-left: 1px solid #2b93bf;
+	border-right: 1px solid #2b93bf;
+}
+
+.contentLoginUserPasswordLogin {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	width: 96%;
+	margin-bottom: 3%;
+	border: 1px solid #2b93bf;
+}
+
+.contentLoginUserLoginButton {
+	margin-bottom: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.contentLoginUserOr {
+	clear: both;
+	text-align: center;
+	margin-bottom: 3%
+}
+
+.contentLoginUserRegister {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+	width: 100%;
+}
+
+.contentUserLoginForgotPassword {
+	clear: both;
+	text-align: center;
+	margin-bottom: 3%;
+	text-decoration: underline;
+}
+
+.contentUserLoginHideResetPasswordPanel {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+.contentLoginUserResetEmail {
+	text-align: right;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border: 1px solid #2b93bf;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 96%;
+}
+
+.contentUserLoginRequestNewPassword {
+	padding-bottom: 3%;
+	padding-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 80%;
+}
+
+.contentUserLoginTitle {
+	text-align: center;
+	margin-bottom: 3%;
+	font-weight: bold;
+}
+
+.contentUserLoginMessage {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	text-align: center;
+}
+
+.contentLoginResetPasswordPanel {
+	
+}
+
+.resetPasswordPanelSaparetor {
+	width: 100%;
+}
+/** end contentLoginUser*/
+/** //////////////// operator ////////////////*/
+/** start operator service calls list content*/
+.contentListWidgetsRows {
+	height: 85%;
+	float: right;
+	width: 100%;
+}
+
+.contentListCount {
+	float: right;
+	width: 100%;
+	background: #00aeef;
+	color: #FFFFFF;
+	text-align: center;
+	border-bottom: 2px solid #2b93bf;
+	border: 1px solid #CCCCCC;
+}
+
+.contentListFilterList {
+	float: right;
+	width: 100%;
+}
+
+.contentListSortList {
+	float: right;
+	width: 100%;
+}
+
+.contentListOpenFilter {
+	float: right;
+	width: 20%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	border: 0;
+	border-left: 1px solid #CCCCCC;
+	background: none;
+	color: #00AEEF;
+}
+
+.contentListOpenSort {
+	float: left;
+	width: 20%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	border: 0;
+	border-right: 1px solid #CCCCCC;
+	background: none;
+	color: #00AEEF;
+}
+
+.contentListSearchBox {
+	float: right;
+	max-width: 60%
+}
+
+.contentListSearchPanel {
+	width: 100%;
+	float: right;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+/** end operator service calls list content*/
+/** start operator schedual reivews list content*/
+.contentOperatorSchedualReviewsList {
+	float: right;
+	width: 100%;
+	height: 100%;
+}
+/** end operator schedual reivews content*/
+/** start operator serviceRequest content*/
+.contentOperatorServiceRequestBuildingDetails {
+	float: right;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.contentOperatorServiceRequestServiceCallDetails {
+	float: right;
+	width: 100%;
+}
+
+.contentOperatorServiceRequestSelectBuilding {
+	float: right;
+	margin: 2%;
+	width: 96%;
+}
+
+/** end operator serviceRequest content*/
+/** start operator reportServiceCall content*/
+.contentOperatorReportServiceCall {
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	color: #000000;
+}
+
+.contentOperatorReportServiceCallDropDownListOwner {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.contentOperatorReportServiceCallWidgetList {
+	width: 65%;
+	float: right;
+}
+
+.contentOeratorReportServiceCallPicture {
+	width: 30%;
+	float: left;
+}
+
+.contentOperatorReportServiceCallUpdateServiceCall {
+	width: 90%;
+	padding: 2%;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.contentOperatorReportServiceCallCloseServiceCall {
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+
+/** end operator reportServiceCall content*/
+/** start operator reportSchedualReview content*/
+.contentReportSchedualReview {
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+}
+
+.contentReportSchedualReviewDescription {
+	width: 80%;
+	margin-bottom: 3%;
+	float: right;
+}
+
+.contentReportSchedualReviewDetails {
+	width: 100%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	paading-right: 0;
+	float: right;
+	margin-top: 2%;
+}
+
+.contentReportSchedualReviewMarkDone {
+	float: right;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	width: 100%;
+}
+
+.contentReportSchedualReviewShowAssignedServiceCalls {
+	float: right;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	width: 100%;
+}
+
+.contentReportSchedualReviewFacilitiesPanel {
+	float: right;
+	width: 100%;
+	min-height: 40%;
+}
+
+.facilitiesPanel {
+	float: right;
+	max-width: 33%;
+	width: 22%;
+	margin-left: 2%;
+	margin-top: 3%;
+}
+
+.facilitiesPanelImage {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	max-width: 100%;
+}
+
+.facilitiesPanelName {
+	text-align: center;
+}
+/** end operator reportSchedualReview content*/
+/** //////////////// resident ////////////////*/
+/** start resident serviceRequest content*/
+.pageMainHeader {
+	border-bottom: 1px solid #CCCCCC;
+	float: right;
+	width: 100%;
+}
+
+.contentServiceRequestBuildingDetails {
+	border-bottom: 1px solid #CCCCCC;
+	float: right;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	width: 100%;
+	background: -webkit-linear-gradient(#ececee, #edecef);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ececee, #edecef);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ececee, #edecef);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ececee, #edecef);
+	/* Standard syntax (must be*/
+}
+
+.contentServiceRequestServiceCallDetails {
+	float: right;
+	width: 80%;
+	margin-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.contentResidentServiceRequestArrowUpdateDetails {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 50%;
+	margin-right: 5%;
+	max-height: 50%;
+	z-index: 4;
+}
+
+.contentResidentServiceRequestMessage {
+	margin-left: 10%;
+	margin-right: 10%;
+	max-width: 80%;
+	position: absolute;
+	text-align: center;
+	z-index: 4;
+	border: #00aeef;
+	margin-top: 2%
+}
+/** end resident serviceRequest content*/
+/** start serviceRequest content*/
+.contentServiceRequestDescription {
+	width: 100%;
+	margin-bottom: 5%;
+	border: 1px solid #00aeef;
+}
+
+.contentServiceRequestSelectBuildingFacility {
+	margin-right: 2%;
+	float: right;
+	width: 60%;
+}
+
+.contentServiceRequestSelectFloor {
+	margin-left: 2%;
+	float: left;
+	width: 30%;
+}
+
+.contentServiceRequestSelectBuildingFacilityRow {
+	height: 100%;
+	line-height: 2;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.contentServiceRequestSelectFloorRow {
+	height: 100%;
+	line-height: 2;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.contentServiceRequestImageFacility {
+	float: right;
+	margin-left: 5%;
+}
+
+.dropDownListRow,.contentServiceRequestFacilityName {
+	text-align: center;
+}
+
+.contentServiceRequestFacilityName {
+	text-align: center;
+}
+
+.contentServiceRequestTakePicture {
+	max-width: 80%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px solid #00aeef;
+	display: block;
+	max-height: 30%;
+}
+
+.contentServiceRequestTakeEmptyPicture {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.contentServiceRequestTypeServiceCall {
+	float: right;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.contentServiceRequestSendServiceCall {
+	display: block;
+	margin-top: 3%;
+	width: 100%;
+}
+
+.contentServiceRequestBottomPanel {
+	width: 80%;
+	float: right;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+/** end serviceRequest content*/
+/** start resident register content*/
+.contentResidentRegisterWidgetList {
+	width: 80%;
+	float: right;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+}
+
+.contentResidentRegisterRegister {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+	width: 80%;
+	margin-bottom: 2%;
+}
+/** end resident register content*/
+/** start resident update details content*/
+.pageResidentUpdateDetailsHeaderText {
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+}
+
+.contentUpdateDetailsProfileImage {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin: 5% auto 2%;
+	max-height: 30%;
+	max-width: 30%;
+}
+
+.contentUpdateDetails {
+	
+}
+
+.contentUpdateDetailsFullName {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.contentUpdateDetailsChangePaswordDropDownWidget {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	float: right;
+	margin-bottom: 2%;
+}
+
+.contentResidentUpdateDetailsDropDownListApartment {
+	width: 100% !important;
+	float: right;
+	border: 0px solid #00AEEF !important;
+}
+
+.contentResidentUpdateDetailsDropDownListFloorLevel {
+	width: 100% !important;
+	float: right;
+	border: 0px solid #00AEEF !important;
+}
+
+.contentResidentUpdateDetailsDropDownListRow {
+	text-align: center;
+}
+
+.contentResidentUpdateDetailsAddressChooser {
+	float: right;
+	text-align: right;
+	width: 100%;
+}
+
+.contentUpdateDetailsWidgetList {
+	width: 80%;
+	float: right;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 2%;
+}
+
+.contentUpdateDetailsUpdate {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+/** end resident update details content*/
+/** start resident service calls list content*/
+.contentResidentServiceCallsListCount {
+	float: right;
+	width: 100%;
+	background: #00aeef;
+	color: #FFFFFF;
+	text-align: center;
+	border-bottom: 2px solid #2b93bf;
+	border: 1px solid #CCCCCC;
+}
+
+.contentResidentServiceCallsList {
+	float: right;
+	width: 100%;
+}
+
+.contentResidentServiceCallsListSearchPanel {
+	float: right;
+	width: 96%;
+	padding: 2%;
+	height: 10%;
+}
+
+.contentResidentServiceCallsListSearch {
+	float: right;
+}
+/** end resident service calls list content*/
+/** start resident report service call content*/
+.contentReportServiceCall {
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	direction: rtl;
+}
+
+.contentReportServiceCallDetails {
+	width: 100%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	paading-right: 0;
+	float: right;
+	margin-top: 2%;
+}
+
+.contentResidentReportServiceCallWidgetList {
+	width: 65%;
+	float: right;
+}
+
+.contentReportServiceCallImage {
+	width: 100%;
+	border-bottom: 2px solid #00aeef;
+	display: block;
+	clear: both;
+	max-height: 40%;
+	height: 40%;
+}
+
+.contentReportTaskSendPost {
+	float: left;
+	margin-top: 2%;
+}
+
+.contentReportTaskPost {
+	float: right;
+	background: rgba(0, 0, 0, 0.5);
+	width: 75%;
+	border: 0;
+}
+
+.contentOperatorReportServiceCallReassign {
+	text-decoration: underline;
+	color: #00aeef;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	display: block;
+	clear: both;
+	float: right;
+	width: 100%;
+}
+
+.contentOperatorReportServiceCallClose {
+	display: block;
+	clear: both;
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	float: right;
+}
+
+.contentReportServiceCallDescription {
+	float: right;
+	margin-bottom: 3%;
+	width: 80%;
+	max-width: 80%;
+	word-wrap: break-word;
+}
+
+.contentReportTaskSendPost {
+	float: left;
+	max-width: 20%;
+}
+
+.postPanel {
+	border-bottom: 1px solid #00ADF2;
+	border-top: 1px solid #00ADF2;
+	bottom: 0;
+	float: right;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	margin-top: 2%;
+	width: 100%;
+}
+
+.contentReportTaskCountPostsPanel {
+	width: 100%;
+	border-bottom: 1px solid #00ADF2;
+	float: right;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	position: relative;
+}
+
+.contentReportTaskCountPosts {
+	color: #000000;
+	float: right;
+	font-weight: bold;
+}
+
+.contentReportTaskCountPostsText {
+	bottom: 0;
+	color: #000000;
+	float: right;
+	margin-right: 5%;
+	position: absolute;
+}
+
+.contentReportTaskPosts {
+	width: 100%;
+}
+
+.contentReportTaskPostPanel {
+	width: 100%;
+	float: right;
+	margin-bottom: 2%;
+	bottom: 0;
+}
+/** end resident report service call content*/
+/** //////////////// serviceProvider ////////////////*/
+/** start serviceProvider service calls list content*/
+.contentServiceProviderServiceCallsList {
+	float: right;
+	width: 100%;
+	height: 100%;
+}
+/** end serviceProvider service calls list content*/
+/** start serviceProvider schedual reivews list content*/
+.contentServiceProviderSchedualReviewsList {
+	float: right;
+	width: 100%;
+	height: 100%;
+}
+/** end serviceProvider schedual reivews content*/
+/** start serviceProvider reportServiceCall content*/
+.contentServiceProviderReportServiceCallWidgetList {
+	width: 65%;
+	float: right;
+}
+
+.contentServiceProviderReportServiceCallPicture {
+	width: 30%;
+	float: left;
+}
+
+.contentServiceProviderReportServiceCallUpdateServiceCall {
+	width: 90%;
+	padding: 2%;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.contentServiceProviderReportServiceCallCloseServiceCall {
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+/** end serviceProvider reportServiceCall content*/
+/** start serviceProvider reportSchedualReview content*/
+.contentServiceProviderReportSchedualReview {
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+}
+
+.contentServiceProviderReportSchedualReviewWidgetList {
+	width: 65%;
+	float: right;
+}
+
+.contentServiceProviderReportSchedualReviewUpdateSchedualReview {
+	width: 90%;
+	padding: 2%;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.contentServiceProviderReportSchedualReviewMarkDone {
+	float: left;
+	text-align: center;
+	width: 30%;
+}
+/** end serviceProvider reportSchedualReview content*/
+/** start serviceProvider update details content*/
+.pageServiceProviderUpdateDetailsHeaderText {
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+}
+
+.contentServiceProviderUpdateDetailsUpdate {
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 2%;
+	padding: 2%;
+	width: 90%;
+}
+/** end serviceProvider update details content*/
+/**start managementOrganization details content*/
+.contentManagementOrganization {
+	width: 90%;
+	padding-right: 5%;
+	padding-left: 5%;
+	word-wrap: break-word;
+}
+
+.contentManagementOrganizationDescription {
+	width: 80%;
+	float: right;
+	color: #7B7B7B;
+}
+
+.contentManagementOrganizationPanel {
+	float: right;
+	margin-top: 3%;
+	width: 100%;
+	position: relative;
+}
+
+.contentManagementOrganizationImage {
+	float: right;
+	margin-left: 2%;
+}
+
+.contentManagementOrganizationText {
+	margin-right: 25%;
+	padding-right: 3%;
+	position: absolute;
+	top: 28%;
+	width: 70%;
+}
+
+.contentManagementOrganizationName {
+	width: 90%;
+	text-align: right;
+	margin-bottom: 5%;
+	word-wrap: break-word;
+	margin-top: 10%;
+	color: #7B7B7B;
+}
+/**end managementOrganization details content*/
+/** //////////////// widgets ////////////////*/
+/** start TabBarPanel*/
+.tabs {
+	width: 100%;
+	float: right;
+}
+
+.tabItemCaption {
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	line-height: 12px;
+	margin-top: 5px;
+}
+
+.tabItem {
+	background: none repeat scroll 0 0 #6EB5FF;
+	float: right;
+	height: 45px;
+	box-shadow: 0 0 5px #CCCCCC;
+}
+
+.tabItemSelected {
+	background: none repeat scroll 0 0 #FFA54F;
+	float: right;
+	height: 45px;
+	box-shadow: 0 0 5px #CCCCCC;
+}
+
+.tabItemImage {
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-left: 2px;
+}
+/** end TabBarPanel*/
+/** start RadioGroup*/
+.radioGroupRadioRow {
+	display: block;
+	height: 32px;
+	margin-bottom: 5px;
+}
+
+.radioButtonInput {
+	background:
+		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAAEu0lEQVR42u2YSWgbZxTHBYGcAoVcA4FCT4WcAoHcii9JKPRQAoVAIKecCrmaHgohpQ2B0kOhUOi5SR0sby3xilfZFd6o8SLsYmMa77ut1Rrpy/s9/IWxKiea0Uxagj54aDTf8v5v/d68SMTDaGhoONfY2PhpNBqtl9+fm5qansnzC57l9xv5/ULWXIwEPYTRNWHwXGi/u7vbDA8Pm4mJCTM1NWVmZmb0OR6Pm97eXtPS0mJkXaeAuVs1YznsIxi3t7ebyclJs7KyYra3t83u7q7Z3983BwcHSjzv7e3p3MbGhoLq6+sDyKRQnS/mIsFt2ZweHR3VQ2FweHhoUqmUyWQyJpvNmlwup8Qz79LptDk6OlJAW1tbqqHOzk6APMF8FTOXDd/19PSYRCKh0nIoDI6Pj00+nzeFQqEsOY6jawCUTCYVNFobHBwExAsBcaES5vUDAwO6EUmQikM5vFgsKr1pMA8YgAIarW1ubppYLGZBnHuT2j+TRc7y8rLalgOsxG9jXAoCAjTasCBONPH9WSF2USaPZmdnVXLL3AvjckDcIFZXV01XVxcgbpaT/seRkRGzs7OjjlYt81IQCIRg09PTGh2nTNHa2vqhvMytra0pUjwbtQc1AIFAOCbRQb4Qge+c8noSCR6P01mHCxIAAmEKtEB0Cc+4W/2LS0tL6nhBS+8GQTQR0uSVtrY2I2a4jPNd5g9eioqCsn25gWbRMH5GptR0TeiRdEijVv1hDTSLM5KgyLBkSC6aL4eGhtT+TIYNwPrBSTRENfNxu1kAYdjf7Qf4GL42Nzent+Z/BoAbk9SMCe6T+90h+C5MwE1JQYMG6kiPOCEZ8F05IXmHKsreAc76+rrGKLEaRhjalIyQCEvkEYE2E47Nz8+rbVBR2IkIYRH6df0otnhAKFozBJ2M3BcS6sf+AuB391V8QV7sLC4unkrHQYHgLCs9GfekTKsrrXxVC9xWpGQ2BAHC3oREGJE2Pj4O88FyBcl5mUiwwIakn2qoHHNbC+BnFLrNzc1XylZFMvExtT9VEbay9aCfksxdF2JWasx/1QFn1IV8+ThkKjSBOYiMSrRhGeNw+BEOjeTUmCQ76o5Ky/Kb1IdjY2PqE0jAYQCxpTlM3OU4xHsYozkqK65dtMnXFCnfz1dRAsckOghRpMGTAQMT1Gs/SHiHtgALY8o7akwEeZ1wvA4ck+ggRCmpMQtJBK3ABBNBPNvPsoWFBcs4J4x/CuRjVQ75gLqB2wv/4Fuxv79f7YqG+O3o6NAyi6wq9DWFbiSMcQLmqtA9blKA8StMr8vcpch7PWoNilqDotag+F80KLJSNMdeOuaH0Zz5qj+jxPPAP47Ohdqg6FjKm8+jKfPJr8myxBxrQmlQPIlnz2RcSqwNtEHxy1+5iplbYk8gDYqF3YKpe5r0DIA97K26QfHtcNYzc0vsrapBgVffakj5BsBed2R4blCgQr/MLbnN4LlBMbXpVA2AM3w3KILWgOcGBfa78Zt/5uwt9QHPDYpHMf9R8HAoW32DIsg84LtBUW0mrLpBUZDHx39WbgrWFoohNCj++PvttyFrQm1QpPNFvfupAer7Mkq2HmCu1qCoNShqDYpag8Lrea8A1Sm3+phCm2YAAAAASUVORK5CYII=")
+		no-repeat scroll center top;
+	height: 32px;
+	width: 32px;
+	float: right;
+}
+
+.radioButtonInputSelected {
+	background:
+		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABBCAYAAACw0qYLAAAEu0lEQVR42u2YSWgbZxTHBYGcAoVcA4FCT4WcAoHcii9JKPRQAoVAIKecCrmaHgohpQ2B0kOhUOi5SR0sby3xilfZFd6o8SLsYmMa77ut1Rrpy/s9/IWxKiea0Uxagj54aDTf8v5v/d68SMTDaGhoONfY2PhpNBqtl9+fm5qansnzC57l9xv5/ULWXIwEPYTRNWHwXGi/u7vbDA8Pm4mJCTM1NWVmZmb0OR6Pm97eXtPS0mJkXaeAuVs1YznsIxi3t7ebyclJs7KyYra3t83u7q7Z3983BwcHSjzv7e3p3MbGhoLq6+sDyKRQnS/mIsFt2ZweHR3VQ2FweHhoUqmUyWQyJpvNmlwup8Qz79LptDk6OlJAW1tbqqHOzk6APMF8FTOXDd/19PSYRCKh0nIoDI6Pj00+nzeFQqEsOY6jawCUTCYVNFobHBwExAsBcaES5vUDAwO6EUmQikM5vFgsKr1pMA8YgAIarW1ubppYLGZBnHuT2j+TRc7y8rLalgOsxG9jXAoCAjTasCBONPH9WSF2USaPZmdnVXLL3AvjckDcIFZXV01XVxcgbpaT/seRkRGzs7OjjlYt81IQCIRg09PTGh2nTNHa2vqhvMytra0pUjwbtQc1AIFAOCbRQb4Qge+c8noSCR6P01mHCxIAAmEKtEB0Cc+4W/2LS0tL6nhBS+8GQTQR0uSVtrY2I2a4jPNd5g9eioqCsn25gWbRMH5GptR0TeiRdEijVv1hDTSLM5KgyLBkSC6aL4eGhtT+TIYNwPrBSTRENfNxu1kAYdjf7Qf4GL42Nzent+Z/BoAbk9SMCe6T+90h+C5MwE1JQYMG6kiPOCEZ8F05IXmHKsreAc76+rrGKLEaRhjalIyQCEvkEYE2E47Nz8+rbVBR2IkIYRH6df0otnhAKFozBJ2M3BcS6sf+AuB391V8QV7sLC4unkrHQYHgLCs9GfekTKsrrXxVC9xWpGQ2BAHC3oREGJE2Pj4O88FyBcl5mUiwwIakn2qoHHNbC+BnFLrNzc1XylZFMvExtT9VEbay9aCfksxdF2JWasx/1QFn1IV8+ThkKjSBOYiMSrRhGeNw+BEOjeTUmCQ76o5Ky/Kb1IdjY2PqE0jAYQCxpTlM3OU4xHsYozkqK65dtMnXFCnfz1dRAsckOghRpMGTAQMT1Gs/SHiHtgALY8o7akwEeZ1wvA4ck+ggRCmpMQtJBK3ABBNBPNvPsoWFBcs4J4x/CuRjVQ75gLqB2wv/4Fuxv79f7YqG+O3o6NAyi6wq9DWFbiSMcQLmqtA9blKA8StMr8vcpch7PWoNilqDotag+F80KLJSNMdeOuaH0Zz5qj+jxPPAP47Ohdqg6FjKm8+jKfPJr8myxBxrQmlQPIlnz2RcSqwNtEHxy1+5iplbYk8gDYqF3YKpe5r0DIA97K26QfHtcNYzc0vsrapBgVffakj5BsBed2R4blCgQr/MLbnN4LlBMbXpVA2AM3w3KILWgOcGBfa78Zt/5uwt9QHPDYpHMf9R8HAoW32DIsg84LtBUW0mrLpBUZDHx39WbgrWFoohNCj++PvttyFrQm1QpPNFvfupAer7Mkq2HmCu1qCoNShqDYpag8Lrea8A1Sm3+phCm2YAAAAASUVORK5CYII=")
+		no-repeat scroll center bottom;
+	border: 0 none;
+	height: 32px;
+	width: 32px;
+	float: right;
+}
+
+.radioButtonName {
+	float: right;
+	margin-right: 5px;
+	margin-top: 8px;
+}
+/** end RadioGroup*/
+/** start entryWidgetList*/
+.enteryDescriptionWidget {
+	font-weight: bold;
+}
+
+.enteryWidget {
+	display: block;
+	float: right;
+	width: 100%;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+
+.enteryWidgetLine {
+	clear: both;
+	float: right;
+	text-align: right;
+	width: 100%;
+	border-bottom: 1px solid;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+/** end entryWidgetList*/
+/** start entryWidgetListItem*/
+.entryListWidgetRow {
+	float: right;
+	width: 100%;
+}
+
+.entryWidgetListRowDetail {
+	float: right;
+	width: 80%;
+}
+
+.entryWidgetListRowDescription {
+	float: right;
+}
+
+.entryWidgetListRowData {
+	float: right;
+}
+
+.entryWidgetListItemPlus {
+	float: left;
+}
+/** end entryWidgetListItem*/
+/** start listWidgetRowPost*/
+.listWidgetRowPost {
+	color: #000000;
+}
+
+.listWidgetRowPostProfileImage {
+	float: right;
+	max-width: 10%;
+	max-height: 10%;
+}
+
+.listWidgetRowPostDataPanel {
+	float: right;
+	width: 85%;
+	margin-right: 3%;
+}
+
+.listWidgetRowPostReporter {
+	float: right;
+	width: 45%;
+	font-weight: bold;
+	margin-bottom: 3%;
+}
+
+.listWidgetRowPostReportedDate {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.listWidgetRowPostContent {
+	float: right;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+/** end listWidgetRowPost*/
+/** start SpmSuggestBox*/
+.suggestBox {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	float: right;
+}
+
+.suggestBoxRow {
+	text-align: center;
+}
+
+.suggestBoxInputText {
+	background-color: #FFFFFF;
+	text-align: center;
+	border: 0px;
+	width: 100%;
+	padding: 0px;
+	height: 90%;
+	vertical-align: middle;
+}
+
+.suggestBoxInputTextWithOpenList {
+	background-color: #FFFFFF;
+	float: right;
+	margin: 2%;
+	width: 86%;
+	border: 0px;
+}
+
+.suggestBoxOpenList {
+	float: left;
+}
+
+.suggestBoxSuggestionsListView {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+	float: right;
+	padding: 2%;
+	position: absolute;
+}
+/** end SpmSuggestBox*/
+/** start dropDownWidget*/
+.dropDownWidgetText {
+	float: right;
+	width: 100%;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2%;
+}
+
+.dropDownWidgetAction {
+	float: left;
+	width: 10%;
+}
+
+.dropDownWidgetContainerWidget {
+	float: right;
+	width: 100%;
+}
+/** end dropDownWidget*/
+/** start TabBarPanel*/
+.tabBarPanelTabs {
+	
+}
+
+.tabBarPanelContainerSelected {
+	float: right;
+	width: 100%;
+}
+
+.tabBarPanelTab {
+	float: right;
+	height: 15%;
+	border-left: 1px solid #CCCCCC;
+}
+
+.tabBarPanelTabSelected {
+	float: right;
+	background-color: #00aeef;
+	height: 15%;
+	color: #ffffff;
+	border-bottom: 2px solid #2b93bf;
+}
+/** end TabBarPanel*/
+/** start TabBarItem*/
+.tabBarItemImage {
+	float: right;
+}
+
+.tabBarItemTitle {
+	text-align: center;
+	padding: 10% 2% 10% 2%;
+}
+/** end TabBarItem*/
+/** start dateBox*/
+.dateBoxDatePicker {
+	padding: 1%;
+	background-color: #cccccc;
+}
+/** end listBox*/
+/** start dateBox*/
+.listBox {
+	background-color: #f0f0f4;
+	color: #00aeef;
+}
+
+.listBox:FOCUS {
+	background-color: #f0f0f4;
+	color: #00aeef;
+}
+/** end listBox*/
+/** start textBoxBase*/
+/** fix duplicate of BaseTextBox in android */
+.textBoxBase,.textBox {
+	-webkit-user-modify: read-write-plaintext-only;
+	background-color: #f0f0f4;
+	color: #00aeef;
+	padding: 2%;
+	font-family: darimpoFont !important;
+}
+
+.textBox,.serviceRequestContentCustomFieldTextBox {
+	width: 96%;
+}
+
+.serviceRequestContentCustomFieldTextBox {
+	border: 1px solid #00AEEF;
+}
+/** end textBoxBase*/
+/** start button*/
+.withoutClickBackground {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+.withoutClickBackground:ACTIVE {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+/** end button*/
+/** start baseCheckBox*/
+.baseCheckBoxTextRight {
+	float: right;
+	margin-left: 3%;
+	text-align: center;
+	vertical-align: middle;
+	transform: translate(0%, 25%);
+	max-width: 65%;
+}
+
+.baseCheckBoxTextLeft {
+	float: right;
+	text-align: center;
+	margin-right: 3%;
+	vertical-align: middle;
+	transform: translate(0%, 25%);
+	width: 65%;
+}
+
+.baseCheckBoxTextTop {
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.baseCheckBoxTextBottom {
+	text-align: center;
+	margin-top: 1%;
+}
+
+.baseCheckBoxInputRight {
+	float: right;
+}
+
+.baseCheckBoxInputLeft {
+	float: left;
+}
+
+.baseCheckBoxInputTop {
+	
+}
+
+.baseCheckBoxInputBottom {
+	
+}
+
+.baseCheckBoxSwitcher {
+	
+}
+
+.baseCheckBoxSwitcherPanel {
+	position: relative !important;
+	float: right;
+}
+/** end baseCheckBox*/
+/** start listWidget*/
+.listWidgetRowsRoot {
+	
+}
+
+.listWidgetHeader {
+	width: 100%;
+	float: right;
+}
+
+.listWidgetRowDefualtBorderBottom {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.listWidgetFilters {
+	border-bottom: 1px solid #CCCCCC;
+	float: right;
+	margin-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+}
+
+.listWidgetNumberRows {
+	float: left;
+}
+
+.listWidgetSearch {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+.listWidgetSortPanel {
+	float: right;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.listWidgetSortLabel {
+	float: right;
+	margin-left: 2%;
+}
+
+.listWidgetSortInput {
+	float: right;
+}
+
+.listWidgetContent {
+	width: 100%;
+}
+
+.listWidgetCheckBoxFilter {
+	float: right;
+	margin-bottom: 2%;
+	margin-left: 2%;
+}
+
+.listWidgetNoData {
+	float: right;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+}
+/** end listWidget*/
+/** start sideMenu*/
+.sidePanel {
+	float: right;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 11;
+	background: #757f85;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.sidePanelRightPanel {
+	background-color: #00aeef;
+	height: 100%;
+	width: 80%;
+	border-left: 5px solid #0095cd;
+	overflow: scroll;
+	float: right;
+}
+
+.sidePanelLeftPanel {
+	background-color: #00aeef;
+	height: 100%;
+	width: 80%;
+	border-right: 5px solid #0095cd;
+	overflow: scroll;
+	float: left;
+}
+
+.navigationMenu {
+	height: 100%;
+	width: 100%%;
+}
+
+.navigationMenuListWidget {
+	float: right;
+	width: 100%;
+	background-color: #00aeef;
+}
+
+/**.navigationMenuRowItem {
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
+	width: 90%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+}*/
+.navigationMenuProfileImage {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin: auto;
+	max-height: 30%;
+	max-width: 30%;
+	margin-top: 2%;
+}
+
+.navigationMenuFullName {
+	color: #FFFFFF;
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+/** end sideMenu*/
+/** start multiSelect*/
+.multiSelectLine {
+	float: right;
+	margin: 1%;
+}
+
+.multiSelectTitle {
+	width: 100%;
+	float: right;
+	font-weight: bold;
+}
+
+.multiSelectCheckBoxPanel {
+	width: 100%;
+	float: right;
+}
+/** end multiSelect*/
+/** start dropDownList*/
+.dropDownList {
+	border: 1px solid #00aeef;
+	background-color: #f0f0f4;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	position: relative;
+}
+
+.dropDownListEmptyValue {
+	text-align: center;
+}
+
+.dropDownListContainerScrollItems {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 20;
+}
+
+.dropDownListScrollItems {
+	max-height: 30%;
+	position: fixed;
+	background-color: #f1f0f5;
+	box-shadow: 0px 5px 5px 5px #CCCCCC;
+	scrollbar-base-color: orange;
+	scrollbar-arrow-color: green;
+	scrollbar-DarkShadow-Color: blue;
+}
+
+.dropDownListOpenList {
+	margin-right: 2%;
+	margin-left: 2%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.dropDownListSelectedWidget {
+	clear: both;
+	display: -moz-inline-stack;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	line-height: 1.8;
+}
+
+.dropDownlistContainerCustomRow {
+	float: right;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/** end dropDownList*/
+/** start dialogComposite*/
+.dialogComposite {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #757f85;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 20;
+	padding: 0;
+	margin: 0;
+}
+/** end dialogComposite*/
+/** start takePicture*/
+.takePictureContainerButtons {
+	bottom: 0px;
+	position: fixed;
+	width: 96%;
+	font-weight: bold;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+.takePictureDelete {
+	width: 100%;
+	color: #ff0000;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.takePictureCamera {
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.takePictureSelectGallery {
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
+.takePictureCancel {
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+/** end takePicture*/
+/** start dialogOkCancel*/
+.dialogOkCancelOk {
+	float: right;
+	padding-bottom: 5%;
+	padding-bottom: 5%;
+	width: 40%;
+	margin-top: 2%;
+}
+
+.dialogOkCancelCancel {
+	float: left;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 40%;
+	margin-top: 2%;
+}
+/** end dialogOkCancel*/
+/** start dialogMessage*/
+.dialogMessage {
+	background-color: #F0F0F4;
+	border: 1px solid #00AEEF;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 80%;
+	max-width: 80%;
+	min-width: 70%;
+	padding: 2%;
+	position: relative;
+	display: table;
+}
+
+.dialogHideButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(50%, -50%);
+}
+/** end dialogMessage*/
+/** start dialogAlertMessage*/
+.dialogAlertMessageContainerActions {
+	width: 100%;
+	margin-top: 5%;
+	display: inline-block;
+}
+
+.dialogAlertMessageTitle {
+	text-align: center;
+	margin-bottom: 2%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.dialogAlertMessageMessage {
+	text-align: center;
+}
+
+.dialogAlertMessageOk {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 40%;
+	margin-top: 2%;
+}
+/** end dialogAlertMessage*/
+/** start userDetailsDialog*/
+.userDetailsDialogDetailsPanel {
+	width: 100%;
+	float: right;
+}
+
+.userDetailsDialogPanel {
+	width: 100%;
+	float: right;
+}
+
+.userDetailsDialogProfileImage {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 2%;
+}
+
+.userDetailsDialogText {
+	width: 23%;
+	margin-left: 2%;
+	float: right;
+	color: #000000;
+	overflow: hidden;
+}
+
+.userDetailsDialogData {
+	width: 75%;
+	float: right;
+	overflow: hidden;
+}
+/** end userDetailsDialog*/
+/** start datePickerDialog*/
+.datePickerDialogDateTimePanel {
+	float: right;
+	width: 100%%;
+}
+
+.datePickerDialogDateTimeTextPanel {
+	margin: 3%;
+	float: right;
+	width: 94%;
+}
+
+.datePickerDialogDateText {
+	text-align: center;
+}
+
+.datePickerDialogTimeText {
+	text-align: center;
+	margin-top: 2%;
+}
+
+/** end datePickerDialog*/
+/** start residentButton*/
+.darimpoButton {
+	background-color: #00aeef;
+	color: #ffffff;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border: 0 0 2px solid #2b93bf 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 2px solid #2b93bf;
+	font-family: darimpoFont !important;
+}
+/** end residentButton*/
+/** start passwordTextBoxEye*/
+.passwordTextBoxEyeText {
+	float: right;
+	width: 80%;
+	border: 0px;
+}
+
+.passwordTextBoxEyeButtonEye {
+	float: left;
+	margin-right: 3%;
+	max-width: 10%;
+}
+/** end passwordTextBoxEye*/
+/** start textAreaLimitText*/
+.textAreaLimitText {
+	border: 0 none;
+	display: block;
+	margin: auto;
+	width: 96%;
+}
+
+.textAreaLimitLimitChar {
+	text-align: left;
+}
+/** end textAreaLimitText*/
+/** start listWidgetRowServiceCall */
+.listWidgetRowServiceCall {
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+}
+
+.listWidgetRowServiceCallDetailsPanel {
+	width: 70%;
+	float: right;
+	height: 100%;
+	border-right: 1px solid #CCCCCC;
+	padding-right: 2%;
+}
+
+.listWidgetRowServiceCallFacilityPanel {
+	float: right;
+	width: 25%;
+	margin-left: 2%;
+	height: 100%;
+	max-width: 25%;
+}
+
+.listWidgetRowServiceCallFacilityName {
+	text-align: center;
+}
+
+.listWidgetRowServiceCallFacilityImage {
+	margin-bottom: 1%;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+.listWidgetRowServiceCallPanel {
+	float: right;
+	width: 100%;
+	margin-top: 1%;
+}
+
+.listWidgetRowServiceCallText {
+	float: right;
+	width: 23%;
+	margin-left: 2%;
+	color: #000000;
+}
+
+.listWidgetRowServiceCallData {
+	float: right;
+	max-width: 75%;
+	color: #00aeef;
+}
+
+/** end listWidgetRowServiceCall */
+/** start listWidgetRowSchedualReview */
+.listWidgetRowSchedualReviewName {
+	color: #00aeef;
+	width: 100%;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 2%;
+}
+
+.listWidgetRowSchedualReviewPanel {
+	float: right;
+	width: 100%;
+}
+
+.listWidgetRowSchedualReviewText {
+	float: right;
+	width: 28%;
+	color: #000000;
+	margin-left: 2%;
+}
+
+.listWidgetRowSchedualReviewData {
+	float: right;
+	width: 70%;
+	color: #00aeef;
+}
+
+.listWidgetRowSchedualReview {
+	float: right;
+	padding-right: 2%;
+	padding-left: 2%;
+	width: 96%;
+}
+/** end listWidgetRowSchedualReview */
+/** start listWidgetRowPageType */
+.listWidgetRowPageType {
+	white-space: nowrap;
+	text-align: center;
+}
+
+.listWidgetRowPageTypeContainer {
+	display: table;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	vertical-align: middle;
+}
+
+.listWidgetRowPageTypeBorderBottom {
+	border-bottom: 1px solid #ffffff;
+}
+
+.listWidgetRowPageTypeImage {
+	float: right;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.listWidgetRowPageTypeName {
+	color: #FFFFFF;
+	display: table-cell;
+	padding-right: 3%;
+	vertical-align: middle;
+}
+/** end listWidgetRowPageType */
+/** start residentListWidgetRow */
+.residentListWidgetRowResident {
+	width: 96%;
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.residentListWidgetRowPanel {
+	width: 80%;
+	float: right;
+}
+
+.residentListWidgetRowPanelText {
+	width: 18%;
+	float: right;
+	color: #000000;
+	margin-left: 2%;
+}
+
+.residentListWidgetRowPanelData {
+	width: 80%;
+	float: right;
+}
+
+.residentListWidgetRowProfileImage {
+	max-width: 15%;
+	float: right;
+	margin-left: 2%;
+}
+/** end residentListWidgetRow */
+/** start listWidgetRowSelectBuilding */
+.listWidgetRowSelectBuilding {
+	float: right;
+	width: 100%;
+}
+
+.listWidgetRowSelectBuildingPanel {
+	float: right;
+	width: 96%;
+	padding: 2%;
+}
+
+.listWidgetRowSelectBuildingAddress {
+	float: right;
+	width: 100%;
+}
+
+.listWidgetRowSelectBuildingName {
+	float: right;
+	width: 100%;
+}
+/** end listWidgetRowSelectBuilding */
+/** start textBoxImage */
+.textBoxImagePanel {
+	float: right;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	width: 100%;
+}
+
+.textBoxImageTextBox {
+	border: 0px;
+	width: 80%;
+	margin-right: 5%;
+}
+
+.textBoxImageImage {
+	vertical-align: middle;
+	max-width: 10%;
+	margin-right: 2%;
+	margin-top: 1%;
+}
+/** end textBoxImage */
+/** start descriptionFacilityDialog */
+.descriptionFacilityDialogDetailsPanel {
+	float: right;
+	width: 85%;
+	margin-right: 2%;
+}
+
+.facilityDialogActionButton {
+	border-style: solid;
+	border-width: 1px 1px 2px;
+	padding: 1%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+.descriptionFacilityDialogUpdateFacilityButton {
+	left: 0;
+	margin-left: 2%;
+	margin-top: 2%;
+	position: absolute;
+	top: 0;
+}
+
+.descriptionFacilityDialogCancelUpdateFacilityButton {
+	left: 0;
+	margin-left: 2%;
+	position: absolute;
+	top: 0;
+	transform: translate(0px, 125%);
+}
+
+.descriptionFacilityDialog {
+	background: #FFFFFF;
+	max-height: 80%;
+	width: 80%;
+	margin: auto;
+	position: absolute;
+	border: 1px solid #00aeef;
+}
+
+.descriptionFacilityDialogHeader {
+	text-align: right;
+	text-decoration: underline;
+	color: #000000;
+	margin: 2%;
+}
+
+.descriptionFacilityDialogEditor {
+	text-align: right;
+	color: #000000;
+	margin: 2%;
+	width: 96%;
+	border: 1px solid #00aeef;
+}
+/** end descriptionFacilityDialog */
+/** start reassignServiceCallDialog */
+.reassignServiceCallDialogDropDownList {
+	float: right;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.reassignServiceCallDialogDropDownListRow {
+	text-align: center;
+}
+
+/** end reassignServiceCallDialog */
+/** start quickMessage */
+.quickMessage {
+	background: #757f85;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 10%;
+	display: block;
+	left: 0;
+	margin: 0 auto;
+	max-width: 80%;
+	padding: 1%;
+	position: absolute;
+	right: 0;
+	border-radius: 10px;
+	z-index: 21;
+}
+
+.buildingChooserName {
+	font-weight: bold;
+}
+
+.quickMessageMessage {
+	color: #ffffff;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+/** end quickMessage */
+/** start listWidgetBuildingDetails */
+.listWidgetBuildingDetails {
+	width: 96%;
+	padding-right: 2%;
+	padding-left: 2%;
+	float: right;
+}
+
+.listWidgetBuildingDetailsAddressPanel {
+	width: 100%;
+	float: right;
+	margin-bottom: 3%;
+}
+
+.listWidgetBuildingDetailsAddressText {
+	width: 17%;
+	float: right;
+	margin-left: 3%;
+	color: #000000;
+}
+
+.listWidgetBuildingDetailsAddressData {
+	width: 80%;
+	float: right;
+}
+
+.listWidgetBuildingDetailsPanel {
+	width: 45%;
+	float: right;
+	margin-bottom: 3%;
+}
+
+.listWidgetRowBuildingDetailsText {
+	width: 40%;
+	float: right;
+	margin-left: 3%;
+	color: #000000;
+}
+
+.listWidgetRowBuildingDetailsData {
+	width: 57%;
+	float: right;
+}
+/** end listWidgetBuildingDetails */
+/** start contentOperatorBuildingDetails */
+.contentOperatorBuildingDetails {
+	width: 96%;
+	padding-right: 2%;
+	padding-left: 2%;
+	height: 100%;
+	float: right;
+}
+
+.contentOperatorBuildingDetailsBuildingDeatils {
+	width: 100%;
+	float: right;
+}
+
+.contentOperatorBuildingDetailsDescription {
+	width: 100%;
+	float: right;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.contentOperatorBuildingDetailsFacilitiesPanel {
+	width: 100%;
+	float: right;
+}
+/** end contentOperatorBuildingDetails */
+/** start facilitiesPanel */
+.facilitiesPanelTitle {
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.facilitiesPanelPanel {
+	width: 100%;
+	float: right;
+}
+/** end facilitiesPanel */
+/** start PBuildingListWidgetRow */
+.scroll {
+	overflow: scroll;
+}
+/** end scroll */
+/** start selectItemDialog */
+.selectItemDialogTitle {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.selectItemDialogListWidgetsRows {
+	width: 100%;
+}
+/** end selectItemDialog */
+/** start selectItemDialogListWidgetRow */
+.selectItemDialogListWidgetRow {
+	
+}
+
+.selectItemDialogListWidgetRowLabel {
+	text-align: center;
+}
+/** end selectItemDialogListWidgetRow */
+.clickWidget {
+	text-decoration: underline;
+}
+/** start filterListListWidgetRow */
+.contentListFilterTitle {
+	text-align: center;
+	color: #FFFFFF;
+	border-bottom: 1px #FFFFFF solid;
+	margin-bottom: 2%;
+}
+
+.filterListWidgetRow {
+	width: 100%;
+	float: right;
+	color: #FFFFFF;
+}
+
+.filterListWidgetRowDropDownWidget {
+	width: 100%;
+	float: right;
+}
+
+.filterListWidgetRowFilterPanel {
+	width: 100%;
+	float: right;
+}
+
+.filterListWidgetRowSwitcherUnchecked {
+	float: right;
+	margin-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+}
+
+.filterListWidgetRowSwitcherChecked {
+	background: #0095CD;
+	float: right;
+	margin-bottom: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+}
+/** end filterListListWidgetRow */
+/** start sortListWidgetRow */
+.contentListSortTitle {
+	text-align: center;
+	color: #FFFFFF;
+	border-bottom: 1px #FFFFFF solid;
+	margin-bottom: 2%;
+}
+
+.sortListWidgetRow {
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	color: #FFFFFF;
+}
+
+.sortListWidgetRowSelected {
+	float: right;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 96%;
+	color: #FFFFFF;
+	background: #0095CD;
+}
+
+.sortListWidgetRowName {
+	text-align: center;
+}
+/** end sortListWidgetRow */
+/** start calendarWidget */
+.calendarWidget {
+	overflow: scroll;
+	max-height: 100%;
+}
+
+.calendarWidgetSelectedDay {
+	background: #0095CD;
+	color: #FFFFFF;
+}
+
+.calendarWidgetMonth {
+	float: right;
+	width: 100%;
+	margin-top: 3%;
+}
+
+.calnedarWidgetMonthWeek {
+	float: left;
+	width: 100%;
+}
+
+.calendarWidgetMonthTitle {
+	text-align: center;
+}
+
+.calendarWidgetMonthDaysPanel {
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+
+.calnedarWidgetMonthTitleDay {
+	width: 14.2%;
+	text-align: center;
+	float: left;
+}
+
+.calnedarWidgetDay {
+	float: left;
+	width: 14.2%;
+	text-align: center;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+/** end calendarWidget */
+/** start timeWidget*/
+.timeWidget {
+	float: right;
+	width: 100%;
+}
+
+.timeWidgetNumber {
+	float: left;
+	width: 33%;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+.timeWidgetNumberDisable {
+	float: left;
+	width: 33%;
+	opacity: 0.2;
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+.contentReportServiceCallCustomFieldsPanel {
+	width: 100%;
+	margin-bottom: 2%;
 }

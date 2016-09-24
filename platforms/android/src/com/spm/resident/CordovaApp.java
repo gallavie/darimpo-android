@@ -19,7 +19,9 @@
 
 package com.spm.resident;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.webkit.WebView;
 
 import org.apache.cordova.*;
@@ -28,10 +30,10 @@ public class CordovaApp extends CordovaActivity
 {
 	private ConnectionToJs  connection;
 
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-    	super.onCreate(savedInstanceState);
+	@Override
+	public void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
 		super.init();
 		connection = new ConnectionToJs(this);
 		WebView webView = (WebView) appView.getEngine().getView();
@@ -39,5 +41,5 @@ public class CordovaApp extends CordovaActivity
 		webView.addJavascriptInterface(connection, ConnectionToJs.NAME);	
 		// Set by <content src="index.html" /> in config.xml
 		loadUrl(launchUrl);
-    }
+	}
 }

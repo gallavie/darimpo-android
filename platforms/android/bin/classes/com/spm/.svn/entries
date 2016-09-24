@@ -2,7 +2,7 @@
 
 dir
 3
-https://darimpo-android.googlecode.com/svn/trunk/Darimpo/CordovaLib/src
+https://darimpo-android.googlecode.com/svn/trunk/Darimpo/src/com/spm
 https://darimpo-android.googlecode.com/svn
 
 
@@ -33,9 +33,6 @@ d46175c5-ac46-e595-2654-b96f0c9b59d1
 
 0
 
-com
-dir
-
-org
+resident
 dir
 
