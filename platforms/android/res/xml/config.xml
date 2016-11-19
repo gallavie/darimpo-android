@@ -1,8 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.spm.resident" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <preference name="loglevel" value="DEBUG" />
-    <access launch-external="yes" origin="tel:*" />
-    <access launch-external="yes" origin="mailto:*" />
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    id="com.spm.resident"
+    version="0.0.1"
+    xmlns="http://www.w3.org/ns/widgets" >
+
+    <preference
+        name="loglevel"
+        value="DEBUG" />
+
+    <access
+        launch-external="yes"
+        origin="tel:*" />
+    <access
+        launch-external="yes"
+        origin="mailto:*" />
+
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
@@ -21,32 +34,43 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-    <feature name="Device">
-        <param name="android-package" value="org.apache.cordova.device.Device" />
+
+    <feature name="Device" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.device.Device" />
     </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    <feature name="Camera" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    <feature name="InAppBrowser" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
-    <name>Darimpo</name>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    <feature name="NetworkStatus" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
+    <feature name="Whitelist" >
+        <param
+            name="android-package"
+            value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param
+            name="onload"
+            value="true" />
     </feature>
+
     <name>
 Darimpo
     </name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+
+
     <content src="index.html" />
+
     <access origin="*" />
+
 </widget>
