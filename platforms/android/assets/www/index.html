@@ -10,12 +10,14 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
 <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-<meta name="serverVersion" content="3.6" />
+<meta name="serverVersion" content="3.71" />
 
 <meta name="googlePlayAppURL_RESIDENT"
 	content="https://play.google.com/store/apps/details?id=com.spm.resident" />
 <meta name="appstoreAppURL_RESIDENT"
 	content="https://itunes.apple.com/il/app/drympw-dyyr/id863924170?mt=8" />
+<link rel="stylesheet" type="text/css" href="css/phone/phneCssLTR.css">
+<link rel="stylesheet" type="text/css" href="css/phone/phneCssRTL.css">
 
 <!-- Consider inlining CSS to reduce the number of requested files 
 <!--                                                               -->
@@ -70,6 +72,7 @@
 			document.getElementById("ppiData").innerText = "" + getPPI();
 		    document.getElementById("dpiData").innerText = "" + window.devicePixelRatio;
 		    document.getElementById("xdpiData").innerText = "" + window.interface.getXdpi();
+		    window.ga.startTrackerWithId('UA-80875420-1', 30);
 		   
 		}
 		

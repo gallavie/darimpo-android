@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.spm.resident"
     android:hardwareAccelerated="true"
-    android:versionCode="3600"
-    android:versionName="3.6" >
+    android:versionCode="3701"
+    android:versionName="3.71" >
 
     <supports-screens
         android:anyDensity="true"
