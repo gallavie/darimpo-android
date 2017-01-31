@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/drawable/common_signin_btn_text_light.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable/common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/drawable/common_signin_btn_icon_dark.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable/common_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/drawable/common_signin_btn_icon_light.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable/common_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/drawable/common_signin_btn_text_dark.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable/common_signin_btn_text_dark.xml"
+    }
+]

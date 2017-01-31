@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable-tvdpi/ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable-tvdpi/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable-tvdpi/ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/release/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/drawable-tvdpi/ic_plusone_standard_off_client.png"
+    }
+]

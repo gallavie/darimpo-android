@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/color/common_signin_btn_text_light.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/color/common_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/color/common_signin_btn_text_dark.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/color/common_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/gallavie/Documents/workspace/androidStudioWorkspace/Darimpo/platforms/android/com.google.playservices/resident-google-play-services_lib/res/color/wallet_primary_text_holo_light.xml"
+    }
+]
