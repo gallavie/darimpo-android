@@ -31,6 +31,11 @@
         <param name="ios-package" value="CDVStatusBar" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+        <param name="onload" value="true" />
+    </feature>
+
     <name>Darimpo</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
@@ -67,8 +72,7 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
-        <param name="onload" value="true" />
-    </feature>
-</widget>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreen" value="none"/>
+
+   </widget>

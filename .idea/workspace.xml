@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="233e2b05-2958-4947-a131-8a910659e790" name="Default" comment="" />
+    <list default="true" id="233e2b05-2958-4947-a131-8a910659e790" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/0FC0D92ACCE9CD5205AAB95E34877242.cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/18F348AD1395DA7CCB22579169C91428.cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/36372331BE1967C8D0917A7A872B36ED.cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/652CE1BBE70570F291C820189C8D09E3.cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/860720471CA32DAF90664DB7767F9E28.cache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/F3697C844243B7F957E548844D96FA81.cache.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/03179D856F256E6F1FA4A407BCCA1222.gwt.rpc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/0949733F2A5A7941C9F07653017DE3D0.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/09F619C90C8E0E984850E6F280BFE1F2.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/26A5AEEC5CDE7BD6CFEEDD00C5945B7D.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/70FFAA3E914778B30BDE3708EDFC314E.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/726EE570E045A1C21BCC2F94F08602B1.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/7BEABE682BDB85FF594414FBCDB08FA4.gwt.rpc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/EE8F1E1B28BE44BC53B9FB6B55BDEE9A.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/038AB1D70A9303CCE3BDD81E2E1205FD.gwt.rpc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/2DDE611E84FEBEBC306278779D655D54.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/6F7CAFE426741735A25FFBA0D3AF3C68.gwt.rpc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/7B2837705A11A8BF0D16C05E9FF97833.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/9CFE08CAE3EA06095E5FA7E5BC9F10FA.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/AEA045200DD7CB7CB4ED6528C07C5994.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/E32B474E825FBA13971A96AAF0E56691.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/ios/www/js/E8440377C410A450B7756E2E795AA29F.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/2109D26281E6A7F9CB094EFBDB4EDC73.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/249B9402421D508EFA72E588D8696860.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/3362D3EDF099D33A71BD5E43ACD500BE.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/4CC0AE43FEA05F2BA0B0F260020C298B.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/D4FA495419CB44228F1ED0FC896717C8.cache.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/js/F1751DCFEA9F20BC0901A9B64AD10340.cache.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/5560441F0120ABFCF78A017F7FDE046D.gwt.rpc" afterPath="$PROJECT_DIR$/www/js/993CA151DF8CA14DEE56B2856C55F931.gwt.rpc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/7BEABE682BDB85FF594414FBCDB08FA4.gwt.rpc" afterPath="$PROJECT_DIR$/www/js/BE6E25EFD5B5B544D935A40A7C355DA6.gwt.rpc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/platforms/android/.gradle/2.14.1/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Darimpo.xcworkspace/xcuserdata/gallavie.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/platforms/ios/Darimpo.xcworkspace/xcuserdata/gallavie.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.idea/libraries/support_v4_24_1_1.xml" afterPath="$PROJECT_DIR$/platforms/android/.idea/libraries/support_v4_24_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/.idea/workspace.xml" afterPath="$PROJECT_DIR$/platforms/android/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" afterPath="$PROJECT_DIR$/platforms/android/CordovaLib/CordovaLib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/compilation-mappings.txt" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/compilation-mappings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/floor_report.nocache.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/floor_report.nocache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/com.google.playservices/resident-google-play-services_lib/google-play-services_lib.iml" afterPath="$PROJECT_DIR$/platforms/android/com.google.playservices/resident-google-play-services_lib/google-play-services_lib.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/Darimpo/config.xml" afterPath="$PROJECT_DIR$/platforms/ios/Darimpo/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/compilation-mappings.txt" afterPath="$PROJECT_DIR$/platforms/ios/www/js/compilation-mappings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/ios/www/js/floor_report.nocache.js" afterPath="$PROJECT_DIR$/platforms/ios/www/js/floor_report.nocache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/compilation-mappings.txt" afterPath="$PROJECT_DIR$/www/js/compilation-mappings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/floor_report.nocache.js" afterPath="$PROJECT_DIR$/www/js/floor_report.nocache.js" />
+    </list>
     <ignored path="Darimpo.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,28 +72,27 @@
     <favorites_list name="Darimpo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/index.html" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="983" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -54,7 +105,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -69,26 +120,24 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Darimpo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/platforms/android" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/js" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -190,7 +239,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="983" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="990" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -232,7 +281,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
         </state>
       </provider>
     </entry>

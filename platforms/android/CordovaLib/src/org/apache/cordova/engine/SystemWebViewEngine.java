@@ -84,6 +84,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
         this.preferences = preferences;
         this.webView = webView;
         cookieManager = new SystemCookieManager(webView);
+
     }
 
     @Override
