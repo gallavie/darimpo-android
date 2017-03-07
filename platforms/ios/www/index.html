@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+                    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+                        
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                        <link rel="stylesheet" type="text/css" href="css/phone/phneCssLTR.css">
+                        <link rel="stylesheet" type="text/css" href="css/phone/phneCssRTL.css">
+
+                                    <!-- Consider inlining CSS to reduce the number of requested files
+                                     <!--                                                               -->
+                                    <!--                                           -->
+                                    <!-- Any title is fine                         -->
+                                    <!--                                           -->
+                                    <!--                                           -->
+                                    <!-- This script loads your compiled module.   -->
+                                    <!-- If you add any GWT meta tags, they must   -->
+                                    <!-- be added before this line.                -->
+                                    <!--                                           -->
+                                    
+    </head>
+    
+    <!--                                           -->
+    <!-- The body can have arbitrary html, or      -->
+    <!-- you can leave the body empty if you want  -->
+    <!-- to create a completely dynamic UI.        -->
+    <!--                                           -->
+    <body onload="onLoaded()">
+        <div id="dpiData" style="display: none;"></div>
+        <div id="ppiData" style="display: none;"></div>
+        <div id="xdpiData" style="display: none;"></div>
+        
+        <div id="notificationData" style="display: none;"></div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        
+        <script type="text/javascript" language="javascript"
+            src="js/floor_report.nocache.js"></script>
+        
+        
+        
+        <!-- Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-80875420-1']);
+            
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+        </script>
+        
+        <script type="text/javascript" language="javascript">
+            document.addEventListener("deviceready", function(){
+                onDeviceReady();
+            },false);
+            
+            function getPPI(){
+                // create an empty element
+                var div = document.createElement("div");
+                // give it an absolute size of one inch
+                div.style.width="1in";
+                // append it to the body
+                var body = document.getElementsByTagName("body")[0];
+                body.appendChild(div);
+                // read the computed width
+                var ppi = document.defaultView.getComputedStyle(div, null).getPropertyValue('width');
+                // remove it again
+                body.removeChild(div);
+                // and return the value
+                return parseFloat(ppi);
+            }
+        
+            function onDeviceReady() {
+                cordova.exec(onGetDeepLinkParam, null, "JavaScriptPlugin", "getDeviceInfo", []);
+                window.alert("gal");
+                document.addEventListener("pause", onInnerPause, false);
+                document.addEventListener("resume", onInnerResume, false);
+
+                window.ga.startTrackerWithId('UA-80875420-1', 30);
+
+            }
+        
+            function onGetDeepLinkParam(deepLink) {
+                window.deepLink = deepLink;
+            }
+            function onInnerPause() {
+                window.onPause();
+            }
+            function onInnerResume() {
+                window.onResume();
+            }
+        
+        </script>
+        
+
+        
+        
+    </body>
+</html>
