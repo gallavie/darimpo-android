@@ -9,8 +9,12 @@
 #import <Cordova/CDVPlugin.h>
 
 
+
+
+
 @interface JavaScriptPlugin : CDVPlugin{}
     
-- (void)getDeviceInfo:(CDVInvokedUrlCommand*)command;
-    
+- (void)getDeepLink:(CDVInvokedUrlCommand*)command;
+   
+    @property NSString *running;
 @end

@@ -10,21 +10,24 @@
 #import "AppDelegate.h"
 
 @implementation JavaScriptPlugin
-- (void)getDeviceInfo:(CDVInvokedUrlCommand*)command
+    
+    - (void)getDeepLink:(CDVInvokedUrlCommand*)command
     {
-        
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message"
-                                                        message:@"check"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-//        NSDictionary* deviceProperties = [self deviceProperties];
-//        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:deviceProperties];
-//        
-//        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-    }
 
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+
+        NSString* urlScheme = appDelegate.urlScheme;
+//        
+//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message"
+//                                                        message:urlScheme
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//        [alert show];
+
+        CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:urlScheme];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+
+    }
+    
 @end

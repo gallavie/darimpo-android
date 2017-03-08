@@ -36,7 +36,8 @@
         <param name="onload" value="true" />
     </feature>
     <feature name="JavaScriptPlugin">
-        <param name="android-package" value="JavaScriptPlugin" />
+        <param name="ios-package" value="JavaScriptPlugin" />
+        <param name="onload" value="true" />
     </feature>
     <name>Darimpo</name>
     <description>

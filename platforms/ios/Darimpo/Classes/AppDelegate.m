@@ -29,7 +29,6 @@
 #import "MainViewController.h"
 
 @implementation AppDelegate
-    NSString *urlScheme;
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
@@ -42,7 +41,14 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
    
-    urlScheme = url.absoluteString;
+    self.urlScheme = url.absoluteString;
+    
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Message"
+//                                                    message:self.urlScheme
+//                                                   delegate:nil
+//                                          cancelButtonTitle:@"OK"
+//                                          otherButtonTitles:nil];
+//    [alert show];
 
 }
 + (AppDelegate *)sharedAppDelegate{

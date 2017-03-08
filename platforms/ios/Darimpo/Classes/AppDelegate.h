@@ -30,7 +30,7 @@
 
 @interface AppDelegate : CDVAppDelegate {}
    
-    @property NSString* getUrlScheme;
+    @property NSString* urlScheme;
     + (AppDelegate *)sharedAppDelegate;
 
 

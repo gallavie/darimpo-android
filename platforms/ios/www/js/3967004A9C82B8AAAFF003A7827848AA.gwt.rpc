@@ -118,6 +118,7 @@ com.lebsh.floor.shared.rpc.requests.RequestData, true, true, true, true, com.leb
 com.lebsh.floor.shared.rpc.requests.RequestData$TableNameEnum, true, true, true, true, com.lebsh.floor.shared.rpc.requests.RequestData$TableNameEnum/1328233680, 1328233680
 com.lebsh.floor.shared.rpc.requests.RequestDataPackage, true, true, true, true, com.lebsh.floor.shared.rpc.requests.RequestDataPackage/1857594198, 1857594198
 com.lebsh.floor.shared.rpc.requests.UpdateApartmentsRequest, false, false, true, true, com.lebsh.floor.shared.rpc.requests.UpdateApartmentsRequest/2245153066, 2245153066
+com.lebsh.floor.shared.rpc.requests.UpdateFloorsRequest, false, false, true, true, com.lebsh.floor.shared.rpc.requests.UpdateFloorsRequest/1617974031, 1617974031
 com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse/2161345274, 2161345274
 com.lebsh.floor.shared.rpc.responses.BaseLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.BaseLoginResponse/786324328, 786324328
 com.lebsh.floor.shared.rpc.responses.BaseResponse, true, false, false, false, com.lebsh.floor.shared.rpc.responses.BaseResponse/1504097425, 1504097425

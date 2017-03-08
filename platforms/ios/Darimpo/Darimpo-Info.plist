@@ -32,7 +32,8 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>idarimpo</string>
-				<string></string>
+				<string>www.manager.darimpo.com</string>
+				<string>www.floor-report.appspot.com</string>
 			</array>
 		</dict>
 	</array>
