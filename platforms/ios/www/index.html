@@ -47,51 +47,35 @@
             src="js/floor_report.nocache.js"></script>
         
         
-        
-        <!-- Analytics -->
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-80875420-1']);
-            
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
-
-        </script>
-        
         <script type="text/javascript" language="javascript">
-            document.addEventListener("deviceready", function(){onDeviceReady();},false);
-            
-        
+            function onLoaded() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+                
+            }
             function onDeviceReady() {
-                
-                
                 cordova.exec(onGetDeepLinkParam, onGetDeepLinkParamError, "JavaScriptPlugin", "getDeepLink", []);
+
                 document.addEventListener("pause", onInnerPause, false);
                 document.addEventListener("resume", onInnerResume, false);
 
                 window.ga.startTrackerWithId('UA-80875420-1', 30);
-
+            
             }
         
             function onGetDeepLinkParam(deepLink) {
                 window.deepLink = deepLink;
-                window.alert(deepLink);
             }
             function onGetDeepLinkParamError() {
-               
+                window.deepLink = deepLink;
             }
             function onInnerPause() {
-                window.onPause();
+                window.onGWTPause();
             }
             function onInnerResume() {
-                window.onResume();
+                window.onGWTResume();
+            
             }
-        
         </script>
-        
 
         
         

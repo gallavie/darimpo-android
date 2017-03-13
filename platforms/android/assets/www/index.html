@@ -50,21 +50,7 @@
         src="js/googleAnalytics.js"></script>
 
 
-<!-- Analytics -->
-<script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-80875420-1']);
-
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
-</script>
-
 <script type="text/javascript" language="javascript">
-
-
         function onLoaded() {
             document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -86,13 +72,12 @@
         }
 
         function onDeviceReady() {
-            cordova.exec(onGetDeepLinkParam, null, "JavaScriptPlugin", null, []);
-
-            document.addEventListener("pause", onInnerPause, false);
-            document.addEventListener("resume", onInnerResume, false);
-           // document.getElementById("ppiData").innerText = "" + getPPI();
-            //document.getElementById("dpiData").innerText = "" + window.devicePixelRatio;
-           // document.getElementById("xdpiData").innerText = "" + window.interface.getXdpi();
+           cordova.exec(onGetDeepLinkParam, null, "JavaScriptPlugin", null, []);
+           document.addEventListener("pause", onInnerPause, false);
+           document.addEventListener("resume", onInnerResume, false);
+           document.getElementById("ppiData").innerText = "" + getPPI();
+           document.getElementById("dpiData").innerText = "" + window.devicePixelRatio;
+           document.getElementById("xdpiData").innerText = "" + window.interface.getXdpi();
 
             window.ga.startTrackerWithId('UA-80875420-1', 30);
 
@@ -102,10 +87,10 @@
             window.deepLink = deepLink;
         }
         function onInnerPause() {
-            window.onPause();
+            window.onGWTPause();
         }
         function onInnerResume() {
-            window.onResume();
+            window.onGWTResume();
         }
 </script>
 

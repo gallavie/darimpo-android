@@ -35,8 +35,8 @@ com.lebsh.floor.shared.dto.BuildingDTO, true, true, true, true, com.lebsh.floor.
 com.lebsh.floor.shared.dto.BuildingFacilityDTO, true, true, true, true, com.lebsh.floor.shared.dto.BuildingFacilityDTO/366324558, 366324558
 [Lcom.lebsh.floor.shared.dto.BuildingFacilityDTO;, true, true, true, true, [Lcom.lebsh.floor.shared.dto.BuildingFacilityDTO;/1402614223, 1402614223
 com.lebsh.floor.shared.dto.BuildingFacilityTranslateDTO, true, true, true, true, com.lebsh.floor.shared.dto.BuildingFacilityTranslateDTO/3296864945, 3296864945
-com.lebsh.floor.shared.dto.BuildingPlaceDTO, true, true, true, true, com.lebsh.floor.shared.dto.BuildingPlaceDTO/3775700832, 3775700832
-[Lcom.lebsh.floor.shared.dto.BuildingPlaceDTO;, true, true, true, true, [Lcom.lebsh.floor.shared.dto.BuildingPlaceDTO;/311176043, 311176043
+com.lebsh.floor.shared.dto.BuildingPlaceDTO, true, true, true, true, com.lebsh.floor.shared.dto.BuildingPlaceDTO/3652771385, 3652771385
+[Lcom.lebsh.floor.shared.dto.BuildingPlaceDTO;, true, true, true, true, [Lcom.lebsh.floor.shared.dto.BuildingPlaceDTO;/2839141650, 2839141650
 com.lebsh.floor.shared.dto.ChequeDTO, true, true, true, true, com.lebsh.floor.shared.dto.ChequeDTO/3855652392, 3855652392
 [Lcom.lebsh.floor.shared.dto.ChequeDTO;, true, true, true, true, [Lcom.lebsh.floor.shared.dto.ChequeDTO;/870572599, 870572599
 com.lebsh.floor.shared.dto.DesktopUserDTO, true, true, true, true, com.lebsh.floor.shared.dto.DesktopUserDTO/126063893, 126063893
@@ -122,7 +122,7 @@ com.lebsh.floor.shared.rpc.requests.UpdateFloorsRequest, false, false, true, tru
 com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse/2161345274, 2161345274
 com.lebsh.floor.shared.rpc.responses.BaseLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.BaseLoginResponse/786324328, 786324328
 com.lebsh.floor.shared.rpc.responses.BaseResponse, true, false, false, false, com.lebsh.floor.shared.rpc.responses.BaseResponse/1504097425, 1504097425
-com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse/2898179123, 2898179123
+com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse/2927337949, 2927337949
 com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse/1550005517, 1550005517
 com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse$StatisticTypeEnum, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse$StatisticTypeEnum/3839727589, 3839727589
 com.lebsh.floor.shared.rpc.responses.GraphsStatisticsResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GraphsStatisticsResponse/1136408429, 1136408429

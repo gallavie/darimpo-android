@@ -32,7 +32,7 @@ com.lebsh.floor.shared.dto.BuildingDTO, false, false, true, true, com.lebsh.floo
 com.lebsh.floor.shared.dto.BuildingFacilityDTO, false, false, true, true, com.lebsh.floor.shared.dto.BuildingFacilityDTO/366324558, 366324558
 [Lcom.lebsh.floor.shared.dto.BuildingFacilityDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.BuildingFacilityDTO;/1402614223, 1402614223
 com.lebsh.floor.shared.dto.BuildingFacilityTranslateDTO, false, false, true, true, com.lebsh.floor.shared.dto.BuildingFacilityTranslateDTO/3296864945, 3296864945
-com.lebsh.floor.shared.dto.BuildingPlaceDTO, false, false, true, true, com.lebsh.floor.shared.dto.BuildingPlaceDTO/3775700832, 3775700832
+com.lebsh.floor.shared.dto.BuildingPlaceDTO, false, false, true, true, com.lebsh.floor.shared.dto.BuildingPlaceDTO/3652771385, 3652771385
 com.lebsh.floor.shared.dto.ChequeDTO, false, false, true, true, com.lebsh.floor.shared.dto.ChequeDTO/3855652392, 3855652392
 [Lcom.lebsh.floor.shared.dto.ChequeDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.ChequeDTO;/870572599, 870572599
 com.lebsh.floor.shared.dto.DesktopUserDTO, false, false, true, true, com.lebsh.floor.shared.dto.DesktopUserDTO/126063893, 126063893
