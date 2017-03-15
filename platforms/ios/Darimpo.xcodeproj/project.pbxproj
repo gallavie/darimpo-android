@@ -5,12 +5,14 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		129A446640F2458394824981 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BA62366FC2415CA4B460BF /* CoreLocation.framework */; };
 		132DD44E79CE4B7AA6734CB0 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0237810F48EEAE0AD3E7 /* CDVJpegHeaderWriter.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		22EED2FF62234C2CA65FF6A5 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */; };
 		29DA70A7E7B244BC9BE8CB62 /* CDVConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2969F399F1A840B5BC94E95E /* CDVConnection.m */; };
 		2E925256CBEE4B21A78D7543 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AEBADFB9664FA59F3BF730 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
@@ -23,6 +25,7 @@
 		7BB93A90D42645C18B453033 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4205E8E75F495ABA08F5C3 /* NSString+URLEncoding.m */; };
 		A728259F1E6D873700917658 /* JavaScriptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A728259E1E6D873700917658 /* JavaScriptPlugin.m */; };
 		A82969B2248C4D0A90E5CA10 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D52D278D0B034C06A1C6276F /* CDVStatusBar.m */; };
+		C3CA0C2D784543A6949F33D1 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F6D009FEC54292BE3F3873 /* DatePicker.xib */; };
 		CB89DFCBC7A6448A8AB21805 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F7599B51FBA44D419484CD31 /* CDVDevice.m */; };
 		CF5F5650067D4A3E8DDA7F07 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FBC3054BA94F2F879A5D95 /* UIImage+CropScaleOrientation.m */; };
 		D25AABF30B28474E8FC4BB16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD42E3401254D9792A84EBF /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -31,8 +34,6 @@
 		EBD76AD62A4E435D90A0E4EC /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85EAAA00AB4E4AA8041732 /* CDVInAppBrowser.m */; };
 		F074CF0077ED4BB8B388B13C /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = F36FFEA854A04F3CA6C79EC1 /* SocialSharing.m */; };
 		F108CE2F5B224FDD9BAECE8E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF58BC8AE97490F9955141B /* CoreTelephony.framework */; };
-		22EED2FF62234C2CA65FF6A5 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */; };
-		C3CA0C2D784543A6949F33D1 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F6D009FEC54292BE3F3873 /* DatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +79,14 @@
 		35CAE0DFA50A42F5916CFEF4 /* CDVReachability.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVReachability.h; path = "cordova-plugin-network-information/CDVReachability.h"; sourceTree = "<group>"; };
 		3DD42E3401254D9792A84EBF /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		44BA62366FC2415CA4B460BF /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45F6D009FEC54292BE3F3873 /* DatePicker.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = DatePicker.xib; sourceTree = "<group>"; };
 		535C552DB7AB4BE391721612 /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = Darimpo/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		6CF58BC8AE97490F9955141B /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		768CAE88A4874AE392CF8D3D /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
 		8058904C53C741C68B1684AA /* SocialSharing.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "cordova-plugin-x-socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
 		843542D9CF124D7796B7F970 /* Social.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		883062ECC46942F59FC8012A /* DatePicker.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = DatePicker.h; path = "cordova-plugin-datepicker/DatePicker.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Darimpo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Darimpo-Info.plist"; path = "Darimpo/Darimpo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		A728259D1E6D873700917658 /* JavaScriptPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptPlugin.h; sourceTree = "<group>"; };
 		A728259E1E6D873700917658 /* JavaScriptPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptPlugin.m; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		B497639B9AF24905B35B7690 /* CDVConnection.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVConnection.h; path = "cordova-plugin-network-information/CDVConnection.h"; sourceTree = "<group>"; };
 		BA85EAAA00AB4E4AA8041732 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
 		D52D278D0B034C06A1C6276F /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DatePicker.m; path = "cordova-plugin-datepicker/DatePicker.m"; sourceTree = "<group>"; };
 		E2E55CFCB4084639A5ECC62E /* NSString+URLEncoding.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "cordova-plugin-x-socialsharing/NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		E87EA7795245484EAE4C4D16 /* CDVCamera.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVCamera.m; path = "cordova-plugin-camera/CDVCamera.m"; sourceTree = "<group>"; };
 		E8EC0237810F48EEAE0AD3E7 /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVJpegHeaderWriter.m; path = "cordova-plugin-camera/CDVJpegHeaderWriter.m"; sourceTree = "<group>"; };
@@ -103,9 +107,6 @@
 		F7599B51FBA44D419484CD31 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
 		F7BE854F41D741D8B42DC206 /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Darimpo/config.xml; sourceTree = "<group>"; };
-		DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */ = {isa = PBXFileReference; name = "DatePicker.m"; path = "cordova-plugin-datepicker/DatePicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		883062ECC46942F59FC8012A /* DatePicker.h */ = {isa = PBXFileReference; name = "DatePicker.h"; path = "cordova-plugin-datepicker/DatePicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		45F6D009FEC54292BE3F3873 /* DatePicker.xib */ = {isa = PBXFileReference; name = "DatePicker.xib"; path = "DatePicker.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
