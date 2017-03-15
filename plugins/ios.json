@@ -29,6 +29,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.darimpo"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.spm.SPMRESIDENT"
         }
     },
     "dependent_plugins": {

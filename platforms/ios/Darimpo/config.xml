@@ -75,6 +75,5 @@
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="SplashScreen" value="none"/>
-
+    <preference name="SplashScreen" value="none" />
 </widget>

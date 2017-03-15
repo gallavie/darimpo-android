@@ -30,6 +30,8 @@
 #import <Cordova/CDVCommandQueue.h>
 
 @interface MainViewController : CDVViewController
+@property UIDatePicker *datePicker;
+@property UIPopoverController *popOverForDatePicker;
 
 @end
 
@@ -38,3 +40,5 @@
 
 @interface MainCommandQueue : CDVCommandQueue
 @end
+
+

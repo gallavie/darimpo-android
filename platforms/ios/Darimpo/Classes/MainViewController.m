@@ -69,11 +69,13 @@
     // you can do so here.
 
     [super viewWillAppear:animated];
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
 }
 
 - (void)viewDidUnload

@@ -13,8 +13,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/phone/phneCssLTR.css">
-    <link rel="stylesheet" type="text/css" href="css/phone/phneCssRTL.css">
 
     <!-- Consider inlining CSS to reduce the number of requested files
      <!--                                                               -->
@@ -46,11 +44,10 @@
 <script type="text/javascript" language="javascript"
         src="js/floor_report.nocache.js"></script>
 
-<script type="text/javascript" language="javascript"
-        src="js/googleAnalytics.js"></script>
-
 
 <script type="text/javascript" language="javascript">
+
+
         function onLoaded() {
             document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -72,14 +69,13 @@
         }
 
         function onDeviceReady() {
+
            cordova.exec(onGetDeepLinkParam, null, "JavaScriptPlugin", null, []);
            document.addEventListener("pause", onInnerPause, false);
            document.addEventListener("resume", onInnerResume, false);
            document.getElementById("ppiData").innerText = "" + getPPI();
            document.getElementById("dpiData").innerText = "" + window.devicePixelRatio;
            document.getElementById("xdpiData").innerText = "" + window.interface.getXdpi();
-
-            window.ga.startTrackerWithId('UA-80875420-1', 30);
 
         }
 
@@ -92,6 +88,14 @@
         function onInnerResume() {
             window.onGWTResume();
         }
+
+
+
+
+
+
+
+
 </script>
 
 

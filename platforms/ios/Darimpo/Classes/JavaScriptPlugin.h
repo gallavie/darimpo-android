@@ -17,4 +17,6 @@
 - (void)getDeepLink:(CDVInvokedUrlCommand*)command;
    
     @property NSString *running;
+    @property UIDatePicker *datepicker;
+    @property UIPopoverController *popOverForDatePicker;
 @end
