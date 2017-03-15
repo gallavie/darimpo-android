@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		129A446640F2458394824981 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44BA62366FC2415CA4B460BF /* CoreLocation.framework */; };
@@ -32,6 +31,8 @@
 		EBD76AD62A4E435D90A0E4EC /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = BA85EAAA00AB4E4AA8041732 /* CDVInAppBrowser.m */; };
 		F074CF0077ED4BB8B388B13C /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = F36FFEA854A04F3CA6C79EC1 /* SocialSharing.m */; };
 		F108CE2F5B224FDD9BAECE8E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF58BC8AE97490F9955141B /* CoreTelephony.framework */; };
+		22EED2FF62234C2CA65FF6A5 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */; };
+		C3CA0C2D784543A6949F33D1 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F6D009FEC54292BE3F3873 /* DatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,9 @@
 		F7599B51FBA44D419484CD31 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
 		F7BE854F41D741D8B42DC206 /* ImageIO.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Darimpo/config.xml; sourceTree = "<group>"; };
+		DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */ = {isa = PBXFileReference; name = "DatePicker.m"; path = "cordova-plugin-datepicker/DatePicker.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		883062ECC46942F59FC8012A /* DatePicker.h */ = {isa = PBXFileReference; name = "DatePicker.h"; path = "cordova-plugin-datepicker/DatePicker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		45F6D009FEC54292BE3F3873 /* DatePicker.xib */ = {isa = PBXFileReference; name = "DatePicker.xib"; path = "DatePicker.xib"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = file.xib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* Darimpo-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				45F6D009FEC54292BE3F3873 /* DatePicker.xib */,
 			);
 			name = Resources;
 			path = Darimpo/Resources;
@@ -242,6 +247,8 @@
 				F36FFEA854A04F3CA6C79EC1 /* SocialSharing.m */,
 				E2E55CFCB4084639A5ECC62E /* NSString+URLEncoding.h */,
 				8058904C53C741C68B1684AA /* SocialSharing.h */,
+				DD912F4E87DF4FD4819CDBF8 /* DatePicker.m */,
+				883062ECC46942F59FC8012A /* DatePicker.h */,
 			);
 			name = Plugins;
 			path = Darimpo/Plugins;
@@ -332,6 +339,7 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				C3CA0C2D784543A6949F33D1 /* DatePicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +382,7 @@
 				EBD76AD62A4E435D90A0E4EC /* CDVInAppBrowser.m in Sources */,
 				7BB93A90D42645C18B453033 /* NSString+URLEncoding.m in Sources */,
 				F074CF0077ED4BB8B388B13C /* SocialSharing.m in Sources */,
+				22EED2FF62234C2CA65FF6A5 /* DatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -88,7 +88,10 @@
         function onInnerResume() {
             window.onGWTResume();
         }
-
+	    function onSuccess(selectedDate) {
+	    	alert('Selected date: ' + selectedDate);
+	    	//$wnd.notifyOnDateSelectedHandler([selectedDate]);
+	    }
 
 
 

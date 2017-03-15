@@ -81,6 +81,14 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
+    },
+    {
+        "id": "cordova-plugin-datepicker.DatePicker",
+        "file": "plugins/cordova-plugin-datepicker/www/android/DatePicker.js",
+        "pluginId": "cordova-plugin-datepicker",
+        "clobbers": [
+            "datePicker"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -94,7 +102,8 @@ module.exports.metadata =
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-googleplayservices": "19.0.3",
     "cordova-plugin-inappbrowser": "1.6.1",
-    "cordova-plugin-x-socialsharing": "5.1.6"
+    "cordova-plugin-x-socialsharing": "5.1.6",
+    "cordova-plugin-datepicker": "0.9.2"
 };
 // BOTTOM OF METADATA
 });

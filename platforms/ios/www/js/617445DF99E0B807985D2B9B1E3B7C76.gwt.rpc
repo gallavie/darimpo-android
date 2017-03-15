@@ -23,6 +23,8 @@ com.google.web.bindery.event.shared.UmbrellaException, true, true, false, false,
 com.googlecode.gwtphonegap.client.file.browser.FileErrorException, true, true, false, false, com.googlecode.gwtphonegap.client.file.browser.FileErrorException/462052366, 462052366
 com.lebsh.floor.client.i18n.KeyLabalMap, true, true, true, true, com.lebsh.floor.client.i18n.KeyLabalMap/1646198740, 1646198740
 com.lebsh.floor.client.rpc.GreetingService, false, false, false, false, _, 1843163369
+com.lebsh.floor.shared.data.ContentPage, true, true, false, false, com.lebsh.floor.shared.data.ContentPage/3412092985, 3412092985
+[Lcom.lebsh.floor.shared.data.ContentPage;, true, true, false, false, [Lcom.lebsh.floor.shared.data.ContentPage;/1528369396, 1528369396
 com.lebsh.floor.shared.data.ExceptionLog, false, false, true, true, com.lebsh.floor.shared.data.ExceptionLog/1830236273, 1830236273
 com.lebsh.floor.shared.data.Location, true, true, true, true, com.lebsh.floor.shared.data.Location/3743571292, 3743571292
 com.lebsh.floor.shared.data.ShareApplication, true, true, false, false, com.lebsh.floor.shared.data.ShareApplication/897728842, 897728842
@@ -125,7 +127,7 @@ com.lebsh.floor.shared.rpc.requests.UpdateFloorsRequest, false, false, true, tru
 com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.AdministratorLoginResponse/2161345274, 2161345274
 com.lebsh.floor.shared.rpc.responses.BaseLoginResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.BaseLoginResponse/786324328, 786324328
 com.lebsh.floor.shared.rpc.responses.BaseResponse, true, false, false, false, com.lebsh.floor.shared.rpc.responses.BaseResponse/1504097425, 1504097425
-com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse/2924986248, 2924986248
+com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralInfoResponse/2694629553, 2694629553
 com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse/1550005517, 1550005517
 com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse$StatisticTypeEnum, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GeneralStatisticsResponse$StatisticTypeEnum/3839727589, 3839727589
 com.lebsh.floor.shared.rpc.responses.GraphsStatisticsResponse, true, true, false, false, com.lebsh.floor.shared.rpc.responses.GraphsStatisticsResponse/1136408429, 1136408429

@@ -32,6 +32,9 @@
         },
         "cordova-plugin-x-socialsharing": {
             "PACKAGE_NAME": "com.spm.SPMRESIDENT"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "com.spm.SPMRESIDENT"
         }
     },
     "dependent_plugins": {

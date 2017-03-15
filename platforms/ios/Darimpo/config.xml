@@ -76,4 +76,7 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="SplashScreen" value="none" />
+    <feature name="DatePicker">
+        <param name="ios-package" value="DatePicker" />
+    </feature>
 </widget>
