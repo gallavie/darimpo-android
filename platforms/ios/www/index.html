@@ -52,18 +52,9 @@
             }
             function onDeviceReady() {
                 
-                cordova.exec(onGetDeepLinkParam, onGetDeepLinkParamError, "JavaScriptPlugin", "getDeepLink", []);
-
                 document.addEventListener("pause", onInnerPause, false);
                 document.addEventListener("resume", onInnerResume, false);
             
-            }
-        
-            function onGetDeepLinkParam(deepLink) {
-                window.deepLink = deepLink;
-            }
-            function onGetDeepLinkParamError() {
-                window.deepLink = deepLink;
             }
             function onInnerPause() {
                 window.onGWTPause();

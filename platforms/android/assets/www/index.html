@@ -70,7 +70,6 @@
 
         function onDeviceReady() {
 
-           cordova.exec(onGetDeepLinkParam, null, "JavaScriptPlugin", null, []);
            document.addEventListener("pause", onInnerPause, false);
            document.addEventListener("resume", onInnerResume, false);
            document.getElementById("ppiData").innerText = "" + getPPI();
@@ -79,24 +78,12 @@
 
         }
 
-        function onGetDeepLinkParam(deepLink) {
-            window.deepLink = deepLink;
-        }
         function onInnerPause() {
             window.onGWTPause();
         }
         function onInnerResume() {
             window.onGWTResume();
         }
-	    function onSuccess(selectedDate) {
-	    	alert('Selected date: ' + selectedDate);
-	    	//$wnd.notifyOnDateSelectedHandler([selectedDate]);
-	    }
-
-
-
-
-
 
 
 </script>
