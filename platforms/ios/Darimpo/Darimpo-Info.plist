@@ -23,7 +23,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.740</string>
+	<string>3.750</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -41,7 +41,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>12</string>
+	<string>10</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -50,18 +50,13 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Darimpo camera use</string>
+	<string>DARIMPO מבקשת אישור לגשת למצלמה</string>
 	<key>NSMainNibFile</key>
 	<string></string>
 	<key>NSMainNibFile~ipad</key>
 	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Use pictures to describe the problem Abuse
-Use pictures to describe the problem Abuse
-Use pictures to describe the problem Abuse
-Use pictures to describe the problem Abuse
-Use pictures to describe the problem Abuse
-</string>
+	<string>DARIMPO מבקשת אישור לגשת לגלריה</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
 	<key>UISupportedInterfaceOrientations</key>
