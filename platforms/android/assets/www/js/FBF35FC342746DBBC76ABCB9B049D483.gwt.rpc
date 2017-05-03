@@ -36,13 +36,14 @@ com.lebsh.floor.shared.dto.BuildingFacilityTranslateDTO, false, false, true, tru
 com.lebsh.floor.shared.dto.BuildingPlaceDTO, false, false, true, true, com.lebsh.floor.shared.dto.BuildingPlaceDTO/3652771385, 3652771385
 com.lebsh.floor.shared.dto.ChequeDTO, false, false, true, true, com.lebsh.floor.shared.dto.ChequeDTO/3855652392, 3855652392
 [Lcom.lebsh.floor.shared.dto.ChequeDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.ChequeDTO;/870572599, 870572599
-com.lebsh.floor.shared.dto.CreditCardDTO, false, false, true, true, com.lebsh.floor.shared.dto.CreditCardDTO/2445887764, 2445887764
+com.lebsh.floor.shared.dto.CreditCardDTO, false, false, true, true, com.lebsh.floor.shared.dto.CreditCardDTO/209783302, 209783302
 com.lebsh.floor.shared.dto.DesktopUserDTO, false, false, true, true, com.lebsh.floor.shared.dto.DesktopUserDTO/3099976202, 3099976202
 com.lebsh.floor.shared.dto.FloorDTO, false, false, true, true, com.lebsh.floor.shared.dto.FloorDTO/1284344772, 1284344772
 [Lcom.lebsh.floor.shared.dto.FloorDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.FloorDTO;/648771312, 648771312
 com.lebsh.floor.shared.dto.FullBuildingDTO, false, false, true, true, com.lebsh.floor.shared.dto.FullBuildingDTO/1639643879, 1639643879
 [Lcom.lebsh.floor.shared.dto.FullBuildingDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.FullBuildingDTO;/1414989578, 1414989578
 com.lebsh.floor.shared.dto.GeneralMailDTO, false, false, true, true, com.lebsh.floor.shared.dto.GeneralMailDTO/3218113428, 3218113428
+com.lebsh.floor.shared.dto.HouseCommitteeAutomaticPaymentDTO, false, false, true, true, com.lebsh.floor.shared.dto.HouseCommitteeAutomaticPaymentDTO/3891520304, 3891520304
 com.lebsh.floor.shared.dto.InventoryTypeDTO, false, false, true, true, com.lebsh.floor.shared.dto.InventoryTypeDTO/983532289, 983532289
 [Lcom.lebsh.floor.shared.dto.InventoryTypeDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.InventoryTypeDTO;/1902134291, 1902134291
 com.lebsh.floor.shared.dto.LanguageDTO, false, false, true, true, com.lebsh.floor.shared.dto.LanguageDTO/3191718336, 3191718336
@@ -50,7 +51,7 @@ com.lebsh.floor.shared.dto.ManagementOrganizationDTO, false, false, true, true, 
 com.lebsh.floor.shared.dto.MobileUserDTO, false, false, true, false, com.lebsh.floor.shared.dto.MobileUserDTO/1769817059, 1769817059
 com.lebsh.floor.shared.dto.OperateUserDTO, false, false, true, true, com.lebsh.floor.shared.dto.OperateUserDTO/2515699806, 2515699806
 com.lebsh.floor.shared.dto.PaymentLogDTO, false, false, true, true, com.lebsh.floor.shared.dto.PaymentLogDTO/2053842103, 2053842103
-com.lebsh.floor.shared.dto.PaymentTerminalDTO, false, false, true, true, com.lebsh.floor.shared.dto.PaymentTerminalDTO/723544974, 723544974
+com.lebsh.floor.shared.dto.PaymentTerminalDTO, false, false, true, true, com.lebsh.floor.shared.dto.PaymentTerminalDTO/4081323436, 4081323436
 com.lebsh.floor.shared.dto.PostDTO, false, false, true, true, com.lebsh.floor.shared.dto.PostDTO/1862284355, 1862284355
 com.lebsh.floor.shared.dto.ReminderDTO, false, false, true, true, com.lebsh.floor.shared.dto.ReminderDTO/3549398287, 3549398287
 [Lcom.lebsh.floor.shared.dto.ReminderDTO;, false, false, true, true, [Lcom.lebsh.floor.shared.dto.ReminderDTO;/422671556, 422671556
@@ -62,7 +63,7 @@ com.lebsh.floor.shared.dto.SchedualReviewDTO, false, false, true, true, com.lebs
 com.lebsh.floor.shared.dto.ServiceCallDTO, false, false, true, true, com.lebsh.floor.shared.dto.ServiceCallDTO/3176071011, 3176071011
 com.lebsh.floor.shared.dto.ServiceProviderUserDTO, false, false, true, true, com.lebsh.floor.shared.dto.ServiceProviderUserDTO/1585876461, 1585876461
 com.lebsh.floor.shared.dto.TaskDTO, false, false, true, false, com.lebsh.floor.shared.dto.TaskDTO/536007845, 536007845
-com.lebsh.floor.shared.dto.TaxInvoiceDTO, false, false, true, true, com.lebsh.floor.shared.dto.TaxInvoiceDTO/3734869588, 3734869588
+com.lebsh.floor.shared.dto.TaxInvoiceDTO, false, false, true, true, com.lebsh.floor.shared.dto.TaxInvoiceDTO/4032111919, 4032111919
 com.lebsh.floor.shared.dto.TaxInvoiceDTO$PaymentTypeEnum, false, false, true, true, com.lebsh.floor.shared.dto.TaxInvoiceDTO$PaymentTypeEnum/784066870, 784066870
 com.lebsh.floor.shared.dto.TaxPricingModelDTO, false, false, true, true, com.lebsh.floor.shared.dto.TaxPricingModelDTO/379204770, 379204770
 com.lebsh.floor.shared.dto.TemporaryUserDTO, false, false, true, true, com.lebsh.floor.shared.dto.TemporaryUserDTO/231233818, 231233818
